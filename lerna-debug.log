@@ -1,10 +1,15 @@
 0 silly argv { _: [ 'add' ],
-0 silly argv   scope: 'cli',
+0 silly argv   scope: 'local-api',
 0 silly argv   globs: [],
 0 silly argv   lernaVersion: '3.22.1',
 0 silly argv   '$0': 'lerna',
-0 silly argv   pkg: 'tropicalocal-api' }
+0 silly argv   pkg: 'fs' }
 1 notice cli v3.22.1
 2 verbose rootPath /Users/ajayjarhad/Desktop/Stuff/jBook Project
-3 error Error: 404 Not Found - GET https://registry.npmjs.org/tropicalocal-api - Not found
-3 error     at res.buffer.catch.then.body (/Users/ajayjarhad/Desktop/Stuff/jBook Project/node_modules/@evocateur/npm-registry-fetch/check-response.js:104:15)
+3 error FetchError: request to https://registry.npmjs.org/fs failed, reason: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+3 error     at ClientRequest.req.on.err (/Users/ajayjarhad/Desktop/Stuff/jBook Project/node_modules/node-fetch-npm/src/index.js:68:14)
+3 error     at ClientRequest.emit (events.js:198:13)
+3 error     at TLSSocket.socketErrorListener (_http_client.js:392:9)
+3 error     at TLSSocket.emit (events.js:198:13)
+3 error     at emitErrorNT (internal/streams/destroy.js:91:8)
+3 error     at emitErrorAndCloseNT (internal/streams/destroy.js:59:3)

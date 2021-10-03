@@ -1,12 +1,18 @@
 {
-  "name": "local-api",
+  "name": "@js-workbook/api",
   "version": "1.0.0",
   "description": "",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "start": "tsc --watch --preserveWatchOutput",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepublishOnly": "tsc"
   },
   "keywords": [],
   "author": "",
@@ -17,9 +23,9 @@
     "typescript": "^4.4.3"
   },
   "dependencies": {
-    "@types/cors": "^2.8.12",
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "http-proxy-middleware": "^2.0.1"
+    "http-proxy-middleware": "^2.0.1",
+    "@js-workbook/client": "^0.1.0"
   }
 }
